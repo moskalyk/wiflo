@@ -50,7 +50,8 @@ Designing architecture and conversation for the future of catastrophe survival i
 
 possible directions
 
-gpt-3: Possible directions, connecting static sites that chat with ideas that emerge as won conversations and arguments.
-lists: storing lists of things for purchase
-data streams: streams of bci data
+* gpt-3: Possible directions, connecting static sites that chat with ideas that emerge as won conversations and arguments. https://twitter.com/balajis/status/1283411100331995137?s=20
+* lists: storing lists of things for purchase. cross site amazon.
+* data streams: streams of bci data. sharing based on common categories.
+
 learning goals: front end adding to filecoin network via powergate as threads, deployed on unstoppable domains, with some visualization aggregation.
