@@ -12,7 +12,7 @@ approach : Direct fueling of attention economies contributed via mindful state c
 
 question : What might a neuroeconomy look like, with 'auras' as public views?
 
-pitch : contruct local environments (e.g. shared space or communal living) to capture, outputted in 'masked forms' an online view into a mmorpg-like engagement with the use of brain computer interfaces.
+pitch : contsruct local environments (e.g. shared space or communal living) to capture, outputted in 'masked forms' an online view into a mmorpg-like engagement with the use of brain computer interfaces.
 
 data structures of agents have a hierachy of observation resolution (1-5 increase in resolution) dictating that persons contribution reward to a network.
 - 1. auras / energy / neurofeedback as wave lengths
