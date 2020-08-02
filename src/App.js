@@ -2,6 +2,8 @@ import React, { useState, useEffect }from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Player from './Player'
+
 import Space from './Space'
 import Aura from './Aura'
 
@@ -58,7 +60,7 @@ function State (props) {
     )
 }
 
-function Header(){
+function Header(props){
   return(
     <div className='header'>
       wiflo°
@@ -114,7 +116,7 @@ function Intention(props){
    
   return(
       <div className='intent'>
-        <input style={{alignText: 'center'}} type="text" name="intention" placeholder="set intention" className="intention"/>
+        <input style={{alignText: 'center'}} type="text" name="intention=v1" placeholder="set intention" className="intention"/>
         <br/>
         <button className="but"
           onMouseEnter={() => setGo(false)}
@@ -126,7 +128,8 @@ function Intention(props){
 }
 
 function Room(){
-  const [dots, setDots] = useState('');
+  const [dots, setDots] = useState('waiting');
+  const [participants, setParticipants] = useState([]);
   console.log('in the room')
   // const participants = this.props.particapants
   
@@ -141,12 +144,21 @@ function Room(){
   
   let loading = 'waiting'
   let count = 0
-  const participants = []
+  // const participants = []
   
   useEffect(() => {
     
     
   const interval = setInterval(() => {
+    
+    if(count < 3){
+      count == 0 && participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS1}/>)
+      count == 1 && participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS2}/>)
+      count == 2 && participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS3}/>)
+    }
+    
+    setParticipants(participants)
+    
     let i = 0
     while(i <= count) {
       setDots(dots + "...")
@@ -156,7 +168,8 @@ function Room(){
      
     if(count == 3) {
       count = 0
-      setDots('')
+      setDots('breath')
+      clearInterval(interval)
     } else {
       count += 1
     }
@@ -168,15 +181,13 @@ function Room(){
   return () => clearInterval(interval);
 }, []);
   
-  participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS1}/>)
-  participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS2}/>)
-  participants.push(<Aura /* here */ WIDTH={window.innerWidth/8} HEIGHT={window.innerHeight/8} essence={LAYERS3}/>)
-  
   return (
     
       <div className="nav">
-        <div>{"waiting"} {dots}</div>
+        <div>{dots}</div>
         <br />
+        <br />
+        <Player />
         <br />
         <div  className="spaces" >
           {participants}
