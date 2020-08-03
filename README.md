@@ -13,3 +13,13 @@ view: all aspects of you should not be permanently stored only, rather store sym
 the best privacy is the one not shared.
 
 let memory = attention(group)
+
+# views
+## global selection
+![global](./global.png)
+
+## intention nav
+![nav](./nav.png)
+
+## meditation room w/ auras
+![room](./room.png)

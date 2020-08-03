@@ -313,7 +313,7 @@ function Main(){
   const [control, setControl] = useState(1)
   
   const view = []
-  
+  state < 4 && view.push(<Header />)
   control == 1 && view.push(<Aura /* here */ WIDTH={window.innerWidth/4} HEIGHT={window.innerHeight/4} essence={LAYERS}/>)
   
   switch(control){
@@ -359,7 +359,7 @@ function App() {
   console.log(UI_STATE)
   return (
     <div className="App">
-      <Header />
+      
       <Main />
     </div>
   );
