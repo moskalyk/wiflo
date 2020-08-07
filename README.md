@@ -1,6 +1,6 @@
 # wiflo : experimental
 
-an interface about us, to practice what's common, a take on decentralized identity, with a focus on affinity.
+an interface about us, to practice what's common, a take on decentralized identity, with a focus on value affinity.
 
 view: all aspects of you should not be permanently stored only, rather store symbols as levers to the psychology of 'who' that is you.
 
