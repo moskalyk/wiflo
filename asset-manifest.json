@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/wiflo/static/css/main.d1f7efcd.chunk.css",
+    "main.js": "/wiflo/static/js/main.7dc07630.chunk.js",
+    "main.js.map": "/wiflo/static/js/main.7dc07630.chunk.js.map",
+    "runtime-main.js": "/wiflo/static/js/runtime-main.4d2f49da.js",
+    "runtime-main.js.map": "/wiflo/static/js/runtime-main.4d2f49da.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/wiflo/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.55567b99.chunk.js": "/wiflo/static/js/2.55567b99.chunk.js",
+    "static/js/2.55567b99.chunk.js.map": "/wiflo/static/js/2.55567b99.chunk.js.map",
+    "index.html": "/wiflo/index.html",
+    "precache-manifest.f64d426726b7e07cb83e881c817d1739.js": "/wiflo/precache-manifest.f64d426726b7e07cb83e881c817d1739.js",
+    "service-worker.js": "/wiflo/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/wiflo/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.d1f7efcd.chunk.css.map": "/wiflo/static/css/main.d1f7efcd.chunk.css.map",
+    "static/js/2.55567b99.chunk.js.LICENSE.txt": "/wiflo/static/js/2.55567b99.chunk.js.LICENSE.txt",
+    "static/media/less_1.png": "/wiflo/static/media/less_1.906bb524.png",
+    "static/media/more_1.png": "/wiflo/static/media/more_1.b474c75f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d2f49da.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.55567b99.chunk.js",
+    "static/css/main.d1f7efcd.chunk.css",
+    "static/js/main.7dc07630.chunk.js"
+  ]
+}
