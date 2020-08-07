@@ -1,4 +1,4 @@
-# wiflo : atomicity by design
+# wiflo : atomicity by design [rough notes]
 
 def'n:
 
