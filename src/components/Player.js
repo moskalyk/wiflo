@@ -141,12 +141,12 @@ var count = 0
 
 setInterval(() => {
   // pop of the list
-  console.log('checking...')
-  console.log(audio)
+  // console.log('checking...')
+  // console.log(audio)
   //play teh element
   if(audio.length > 0){
     const audioEl = audio[0]
-    console.log(audioEl)
+    // console.log(audioEl)
     
     audioEl.addEventListener("canplaythrough", event => {
       /* the audio is now playable; play it if permissions allow */
@@ -170,6 +170,13 @@ function visualize(stream) {
   analyser.fftSize = 1024;
   const bufferLength = analyser.frequencyBinCount;
   const dataArray = new Uint8Array(bufferLength);
+
+  var o = audioCtx.createOscillator()
+  var  g = audioCtx.createGain()
+
+  source.connect(g)
+  g.connect(audioCtx.destination)
+  o.start(0)
 
   source.connect(analyser);
   //analyser.connect(audioCtx.destination);
@@ -229,8 +236,8 @@ window.onresize();
   render(){
     return(
       <>
-        <section class="main-controls">
-          <canvas class="visualizer" height="200px" style={{width: '500px'}}></canvas>
+        <section className="main-controls" style={{width: '100%'}}>
+          <canvas className="visualizer" height="200px" style={{width: '500px'}}></canvas>
           <div id="buttons">
           </div>
         </section>

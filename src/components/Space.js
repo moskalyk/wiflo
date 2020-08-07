@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 const style = {
+	marginTop: 50,
     height: 350 // we can control scene size by setting container dimensions
 };
 
@@ -437,7 +438,16 @@ class Space extends Component {
     };
 
     render() {
-        return <div style={style} ref={ref => (this.mount = ref)} />;
+        return (
+        	<div>
+        	<br />
+        	<br />
+        	<div style={{paddingTop: '10px'}}>
+	        	where would you like to go?
+	      	</div>
+        	<div style={style} ref={ref => (this.mount = ref)} />;
+        	</div>
+        )
     }
 }
 
