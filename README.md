@@ -21,5 +21,5 @@ let memory = attention(group)
 ## intention nav
 ![nav](./nav.png)
 
-## meditation room w/ auras
+## group meditation room w/ auras
 ![room](./room.png)
