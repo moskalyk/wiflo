@@ -1,4 +1,4 @@
-# wiflo : experimental
+# wiflo° : experimental
 
 an interface about us, to practice what's common, a take on decentralized identity, with a focus on value affinity.
 
